@@ -1,17 +1,18 @@
 <Strategem>:    
-    canvas:
-        Rectangle:
-            pos: self.center_x - 5, 0
-            size: 10, self.height
-            
-    Label:
-        font_size: 70  
-        center_x: root.width / 4
-        top: root.top - 50
-        text: "0"
-        
-    Label:
-        font_size: 70  
-        center_x: root.width * 3 / 4
-        top: root.top - 50
-        text: "0"
+    FloatLayout:
+        Button:
+            text: 'UP'
+            size_hint: .2, .2
+            pos_hint: {'center_x':0.5, 'center_y':0.6}
+        Button:
+            text: 'DOWN'
+            size_hint: .2, .2
+            pos_hint: {'center_x':0.5, 'center_y':0.4}
+        Button:
+            text: 'RIGHT'
+            size_hint: .2, .2
+            pos_hint: {'center_x':0.7, 'center_y':0.4}
+        Button:
+            text: 'LEFT'
+            size_hint: .2, .2
+            pos_hint: {'center_x':0.3, 'center_y':0.4}
